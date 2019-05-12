@@ -15,10 +15,8 @@
 
 # todo
 
-- payloads or whatever proper convention is for the actions
 
 - mysql with migrations
-- ci works on circle
 - shared declarations
 - shared prettier spec
 - swap express for koa
