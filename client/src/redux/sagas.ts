@@ -8,7 +8,7 @@ import { getServerTimeFailed, getServerTimeSucceded } from 'src/redux/actions'
 
 const client = new ApolloClient({
 	link: createHttpLink({
-		uri: 'http://localhost:3100/graphql',
+		uri: `http://localhost:3100/graphql`,
 		credentials: 'include',
 	}),
 	cache: new InMemoryCache(),

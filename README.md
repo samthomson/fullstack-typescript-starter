@@ -15,8 +15,17 @@
 
 # todo
 
-- all of the above
-- readme install setup instructions
-- ports in env
 - enum actions 
 - payloads or whatever proper convention is for the actions
+
+- mysql with migrations
+- ci works on circle
+- shared declarations
+- shared prettier spec
+- swap express for koa
+
+- readme install setup instructions
+- docker-compose prod (start not watch server)
+- deploy/re-deploy bash script
+
+Note: when changing env vars for the client, the client must be rebuilt, as that is when env vars are built into the clients transpiled code

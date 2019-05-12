@@ -10,7 +10,7 @@ const app: Application = express()
 
 // enable cors
 var corsOptions = {
-	origin: 'http://localhost:3000',
+	origin: `http://localhost:3000`,
 	credentials: true, // <-- REQUIRED backend setting
 }
 app.use(cors(corsOptions))
