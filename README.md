@@ -24,5 +24,3 @@
 - readme install setup instructions
 - docker-compose prod (start not watch server)
 - deploy/re-deploy bash script
-
-Note: when changing env vars for the client, the client must be rebuilt, as that is when env vars are built into the clients transpiled code
