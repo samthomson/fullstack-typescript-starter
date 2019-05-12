@@ -17,3 +17,6 @@
 
 - all of the above
 - readme install setup instructions
+- ports in env
+- enum actions 
+- payloads or whatever proper convention is for the actions
