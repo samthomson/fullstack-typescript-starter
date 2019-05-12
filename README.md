@@ -15,7 +15,6 @@
 
 # todo
 
-- enum actions 
 - payloads or whatever proper convention is for the actions
 
 - mysql with migrations
