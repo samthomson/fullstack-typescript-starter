@@ -1,8 +1,4 @@
-import {
-	GraphQLObjectType,
-	GraphQLSchema,
-	GraphQLInt,
-} from 'graphql'
+import { GraphQLObjectType, GraphQLSchema, GraphQLInt } from 'graphql'
 import * as moment from 'moment'
 
 const RootQuery = new GraphQLObjectType({
@@ -11,7 +7,8 @@ const RootQuery = new GraphQLObjectType({
 		serverTime: {
 			type: GraphQLInt,
 			resolve: async () => moment().unix(),
-			description: "The time on the server. Represented in Unix time - the number of seconds since 1970."
+			description:
+				'The time on the server. Represented in Unix time - the number of seconds since 1970.',
 		},
 	}),
 })
