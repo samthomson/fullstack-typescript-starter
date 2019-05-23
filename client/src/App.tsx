@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import './../node_modules/semantic-ui-css/semantic.min.css'
 import './App.css'
 
-import { ServerTime } from 'src/declarations'
+import { ServerTime } from '@shared/declarations'
 import { Store } from 'src/redux/store'
 
 interface IAppProps {
@@ -21,11 +21,7 @@ class App extends React.Component<IAppProps, {}> {
 		return (
 			<div className="App ui container">
 				<h1>fullstack typescript starter</h1>
-				<p>
-					{nServerTime === null
-						? '[time unknown]'
-						: nServerTime}
-				</p>
+				<p>{nServerTime === null ? '[time unknown]' : nServerTime}</p>
 			</div>
 		)
 	}
