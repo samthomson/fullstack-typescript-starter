@@ -37,6 +37,21 @@ services:
     volumes:
       - mysqldata:/var/lib/mysql
 
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    environment:
+      - PMA_ARBITRARY=1
+      - MYSQL_USER=root
+      - MYSQL_PASSWORD=${MYSQL_ROOT_PASSWORD}
+    ports:
+      - "8080:80"
+    expose: 
+      - "80"
+    volumes:
+      - /sessions
+    depends_on:
+      - "mysql"
+      
 volumes:
   mysqldata:
     driver: "local"
