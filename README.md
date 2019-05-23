@@ -19,7 +19,6 @@
 - mysql with migrations
 - shared declarations
 - shared prettier spec
-- swap express for koa
 
 - readme install setup instructions
 - docker-compose prod (start not watch server)
