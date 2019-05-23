@@ -1,9 +1,9 @@
-const { DB_HOST, MYSQL_PASSWORD } = process.env
+const { MYSQL_HOST, MYSQL_PASSWORD, MYSQL_USER } = process.env
 
 export default {
-	host: DB_HOST,
+	host: MYSQL_HOST,
 	port: 3306,
-	username: 'root',
+	username: MYSQL_USER,
 	password: MYSQL_PASSWORD,
 	dialect: 'mysql',
 	dialectOptions: {

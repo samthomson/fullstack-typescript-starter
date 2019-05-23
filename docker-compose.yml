@@ -18,9 +18,11 @@ services:
     ports:
       - "3100:3100"
     environment:
-      - DB_HOST=mysql
+      - MYSQL_HOST=mysql
       - MYSQL_DATABASE=${DATABASE_NAME}
-      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
+      - MYSQL_DATABASE_TESTING=${MYSQL_DATABASE_TESTING}
+      - MYSQL_USER=root
+      - MYSQL_PASSWORD=${MYSQL_ROOT_PASSWORD}
     volumes:
       - ./server:/server
       - ./shared:/shared
@@ -51,7 +53,7 @@ services:
       - /sessions
     depends_on:
       - "mysql"
-      
+
 volumes:
   mysqldata:
     driver: "local"
