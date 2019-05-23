@@ -4,10 +4,11 @@ WORKDIR /server
 
 EXPOSE 3100
 
-ADD . /server
+ADD /server /server
+ADD /shared /shared
 
-# RUN yarn --silent
+RUN yarn --silent
 
-# RUN yarn build
+RUN yarn build
 
-# CMD yarn start
+CMD yarn start

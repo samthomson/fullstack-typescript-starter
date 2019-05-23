@@ -1,5 +1,6 @@
 {
 	"compilerOptions": {
+		"baseUrl": "./",
 		"module": "commonjs",
 		"target": "ES5",
 		"moduleResolution": "node",
@@ -11,7 +12,10 @@
 		"noUnusedParameters": true,
 		"noImplicitAny": true, // not working
 		"lib": ["es2015", "dom"],
-		"removeComments": true
+		"removeComments": true,
+		"paths": {
+			"@shared/*": ["../shared/*"]
+		}
 	},
 	"include": ["src/**/*", "test/**/*"],
 	"exclude": ["node_modules"]

@@ -19,7 +19,10 @@
 		"suppressImplicitAnyIndexErrors": true,
 		"noUnusedLocals": true,
 		"noUnusedParameters": true,
-		"removeComments": true
+		"removeComments": true,
+		"paths": {
+			"@shared/*": ["../shared/*"]
+		}
 	},
 	"exclude": [
 		"node_modules",
