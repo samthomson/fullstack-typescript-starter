@@ -23,6 +23,8 @@
 
 Shared typescript declarations can go in the `/shared/declarations.ts` file.
 
+Migrations can be added to `/server/db/migrations` as numericly prepended `.sql` files containing raw sql. Files that haven't been run yet will be executed in alphabetical order, and logged as having been run. Migrations are run with a command in the server container: `docker-compose run server sh yarn run migrate`
+
 # todo
 
 
