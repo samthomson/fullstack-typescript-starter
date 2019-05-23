@@ -28,10 +28,7 @@ Migrations can be added to `/server/db/migrations` as numericly prepended `.sql`
 # todo
 
 
-- mysql with migrations
-- shared declarations
 - shared prettier spec
 
-- readme install setup instructions
 - docker-compose prod (start not watch server)
 - deploy/re-deploy bash script
