@@ -1,4 +1,4 @@
-import { ServerTime } from 'src/declarations'
+import { ServerTime } from '@shared/declarations'
 
 export namespace Store {
 	export type App = {
